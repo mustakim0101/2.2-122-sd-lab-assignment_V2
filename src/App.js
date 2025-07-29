@@ -2,20 +2,21 @@ import React from 'react';
 import { Routes, Route } from 'react-router-dom';
 import Home from './pages/home';
 import About from './pages/about';
-import Notification from './pages/notification'; 
+import Notification from './pages/notification';
+import PokemonChart from './pages/pokemonChart';
 
 function App() {
   return (
     <Routes>
       <Route path="/" element={<Home />} />
       <Route path="/about" element={<About />} />
-      <Route path="/notification" element={<Notification />} /> {/* Add this route */}
+      <Route path="/notification" element={<Notification />} />
+      <Route path="/pokemonchart" element={<PokemonChart />} />
     </Routes>
   );
 }
 
 export default App;
-
 
 /*
 import React from 'react';

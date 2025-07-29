@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>6x6 Table</title>
+ <!--style for -->
+    <style>
+
+    /*style for thunderbolt*/
+    @keyframes lightning {
+      0%, 100% { background-color: rgb(243, 206, 21); box-shadow: none; }
+      50% { background-color: white; box-shadow: 0 0 25px white; }
+    }
+    .thunderbolt:hover {
+      animation: lightning 0.2s ease-in-out 3;
+    }
+    .thunderbolt:active {
+      transform: scale(0.95);
+      box-shadow: 0 0 40px darkgoldenrod;
+    }
+
+    @keyframes lightning2 {
+      0%, 100% { background-color: rgb(243, 206, 21); box-shadow: none; }
+      50% { background-color: black; box-shadow: 0 0 25px black; }
+    }
+    .thunderfang:hover {
+      animation: lightning2 0.33s ease-in-out 3;
+    }
+    .thunderfang:active {
+      transform: scale(0.95);
+      box-shadow: 0 0 40px dimgray;
+    }
+
+    /*style for earthquake*/
+    @keyframes shakeXY {
+      0%   { transform: translate(0, 0); }
+      20%  { transform: translate(-5px, -6px); }
+      40%  { transform: translate(5px, 6px); }
+      60%  { transform: translate(-7px, 5px); }
+      80%  { transform: translate(8px, -8px); }
+      100% { transform: translate(0, 0); }
+    }
+    .earthquake:hover {
+      animation: shakeXY 0.3s ease-in-out 3;
+    }
+
+    @keyframes quakeFlash {
+      0%, 100% { background-color: #964B00; }
+      50% { background-color: #d2691e; }
+    }
+    .earthquake:active {
+      animation: quakeFlash 0.4s ease-in-out 3;
+    }
+
+
+
+    /*style for stone edge*/
+    @keyframes shake {
+      0%   { transform: translateX(0); }
+      25%  { transform: translateX(-7px); }
+      50%  { transform: translateX(6px); }
+      75%  { transform: translateX(-8px); }
+      100% { transform: translateX(0); }
+   }
+    .stone-edge:hover {
+      animation: shake 0.3s linear 2;
+    }
+
+    /*style for dark pulse*/
+    @keyframes dark {
+      0%, 100% { background-color: indigo; box-shadow: none; }
+      20% { background-color: darkslateblue; box-shadow: none; }
+      40% { background-color: darkviolet; box-shadow: none; }
+      60% { background-color: darkmagenta; box-shadow: none; }
+      80% { background-color: violet; box-shadow: 0 0 25px lightgray; }
+    }
+    .darkpulse:hover {
+      animation: dark 0.8s ease-in-out 3;
+    }
+    .darkpulse:active {
+      transform: scale(0.95);
+      box-shadow: 0 0 40px indigo;
+      /*background-color: aliceblue;*/
+      color: black;
+    }
+
+    @keyframes surfWave {
+    0%   { background-position: 0% 50%; }
+    100% { background-position: 100% 50%; }
+    }
+
+    .surf:hover {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Arial;
+    font-weight: bold;
+    color: white;
+    background: linear-gradient(
+    95deg,
+    #0077ff 0%,
+    #00ccff 40%,
+    white 49.8%,
+    white 50.5%,     
+    #0077ff 100%
+    );
+    background-size: 200% 100%;
+    animation: surfWave 1.5s linear 3;
+    }
+    .surf:active {
+    transform: scale(0.95);
+    box-shadow: 0 0 20px #00ccff;
+    }
+    /*style for dark pulse*/
+    
+
+
+    </style>
+</head>
+
+
+<body>
+
+
+<table>
+  <tr>
+    <td style="width: 220px; height: 60px;  border-left:10px solid green; ">
+      <div style="box-sizing: border-box; border-left:6px solid red; border-top:1px solid black; border-bottom:1px solid black; border-right:1px solid black; padding:4px;">
+                   <img src="cowmama.jpg"  />        
+      </div>
+    </td>
+    <td style="width: 200px; height: 200px;" ><p style="font-size: 100px; box-sizing: border-box; ">🔜</p></td>
+    <td style="width: 220px; height: 60px;">
+      <div style="box-sizing: border-box; border-left:1px solid brown; border-top:1px solid black; border-bottom:1px solid black; border-right:1px solid black; padding:4px;">
+                   <img src="kalabhuna.jpg" style=" box-sizing: border-box;" />        
+      </div>
+    </td>
+  </tr>
+  
+</table>
+
+
+<table>
+    <tbody>
+        <!--tyranitar-->
+        <tr>
+            <td style="width: 220px; height: 60px;">
+                <div style="height: 100%; box-sizing: border-box; border-left:5px solid darkmagenta; border-top:5px solid darkmagenta; border-bottom:5px solid darkmagenta;">
+                    <div style="height: 100%; box-sizing: border-box; border-left:4px solid darkorange; border-top:4px solid darkorange; border-bottom:4px solid darkorange;">
+                       <div style="height: 100%; box-sizing: border-box; border-left:3px solid darksalmon; border-top:3px solid darksalmon; border-bottom:3px solid darksalmon;">
+                           <div style="height: 100%; box-sizing: border-box; border-left:1px solid black; border-top:1px solid black; border-bottom:1px solid black; padding:4px;">
+                                     <img src="tyranitar.png"   style=" box-sizing: border-box; display: block; margin: 0 auto;" />
+                                     <p style="display: block; text-align: center; font-family: Arial;"><b><u>TYRANITAR</u></b></p>
+                           </div>
+                       </div>
+                   </div>
+               </div>
+            </td>
+            <td style="width: 220px; height: 60px; padding: 0;">
+                 <div style="height: 100%; display: flex; flex-direction: column; box-sizing: border-box;">
+                       <div class="earthquake" style="flex: 1; background-color: darkgoldenrod; text-align: center;  display: flex;  align-items: center; justify-content: center; font-family: Arial;"><b>EARTHQUAKE</b></div>               
+                       <div class="stone-edge" style="flex: 1; background-color: rgb(135, 215, 250); text-align: center;  display: flex;  align-items: center; justify-content: center;  font-family: Arial;"><b>STONE EDGE</b></div>
+                       <div class="darkpulse" style="flex: 1; background-color: rgb(52, 5, 61); text-align: center;  display: flex;  align-items: center; justify-content: center;  font-family: Arial;"><b style="color: white;">DARK PULSE</b></div>
+                       <div class="thunderbolt" style="flex: 1; background-color: rgb(243, 206, 21); display: flex; align-items: center; justify-content: center; font-family: Arial;"> <b>THUNDERBOLT</b> </div>
+                       <div class="surf" style="flex: 1; background-color: rgb(54, 172, 211); text-align: center;   display: flex;  align-items: center; justify-content: center;  font-family: Arial;"><b>SURF</b></div>                 
+                </div>
+            </td>
+            <td>1,3</td><td>1,4</td><td>1,5</td><td>1,6</td>
+        </tr>
+        <!--salamance-->
+        <tr>
+            <td style="width: 200px; height: 200px;">
+                <div style="height: 100%; box-sizing: border-box; border-left:5px solid red; border-top:5px solid red; border-bottom:5px solid red;">
+                    <div style="height: 100%; box-sizing: border-box; border-left:4px solid blue; border-top:4px solid blue; border-bottom:4px solid blue;">
+                       <div style="height: 100%; box-sizing: border-box; border-left:3px solid violet; border-top:3px solid violet; border-bottom:3px solid violet;">
+                           <div style="height: 100%; box-sizing: border-box; border-left:1px solid black; border-top:1px solid black; border-bottom:1px solid black; padding:4px;">
+                                     <img src="salamence.png"  width="150" height="150" style=" box-sizing: border-box; display: block; margin: 0 auto;" />
+                                     <p style="display: block; text-align: center; font-family: Arial;"><b><u>SALAMANCE</u></b></p>
+                           </div>
+                       </div>
+                   </div>
+               </div>
+        </td>
+        <td style="width: 220px; height: 60px; padding: 0;">
+                 <div style="height: 100%; display: flex; flex-direction: column; box-sizing: border-box;">
+                       <div class="earthquake" style="flex: 1; background-color: darkgoldenrod; text-align: center;  display: flex;  align-items: center; justify-content: center; font-family: Arial;"><b>DRAGON PULSE</b></div>               
+                       <div class="stone-edge" style="flex: 1; background-color: red; text-align: center;  display: flex;  align-items: center; justify-content: center;  font-family: Arial;"><b>FIRE BLAST</b></div>
+                       <div class="darkpulse" style="flex: 1; background-color: rgb(52, 5, 61); text-align: center;  display: flex;  align-items: center; justify-content: center;  font-family: Arial;"><b style="color: white;">HYPER BEAM</b></div>
+                       <div class="thunderfang" style="flex: 1; background-color: rgb(243, 206, 21); display: flex; align-items: center; justify-content: center; font-family: Arial;"> <b>THUNDER FANG</b> </div>
+                       <div class="surf" style="flex: 1; background-color: rgba(85, 186, 220, 0.609); text-align: center;   display: flex;  align-items: center; justify-content: center;  font-family: Arial;"><b>HYDRO PUMP</b></div>                 
+                </div>
+            </td>
+            
+            <td>1,3</td><td>1,4</td><td>1,5</td><td>1,6</td>
+            
+        </tr>
+        <!---->
+        <tr>
+            <td style="width: 200px; height: 200px;">
+                <div style="height: 100%; box-sizing: border-box; border-left:5px solid mediumslateblue; border-top:5px solid mediumslateblue; border-bottom:5px solid mediumslateblue;">
+                    <div style="height: 100%; box-sizing: border-box; border-left:4px solid mediumpurple; border-top:4px solid mediumpurple; border-bottom:4px solid mediumpurple;">
+                       <div style="height: 100%; box-sizing: border-box; border-left:3px solid mediumorchid; border-top:3px solid mediumorchid; border-bottom:3px solid mediumorchid;">
+                           <div style="height: 100%; box-sizing: border-box; border-left:1px solid black; border-top:1px solid black; border-bottom:1px solid black; padding:4px;">
+                                     <img src="alakazam-256x256.png"  width="100" height="100" style=" box-sizing: border-box; display: block; margin: 0 auto;" />
+                                     <p style="display: block; text-align: center; font-family: Arial;"><b><u>ALAKAZAM</u></b></p>
+                           </div>
+                       </div>
+                   </div>
+               </div>
+        </td>
+            <td>1,2</td><td>1,3</td><td>1,4</td><td>1,5</td><td>1,6</td>
+        </tr>
+        <!---->
+        <tr>
+            <td style="width: 200px; height: 200px;">
+                <div style="height: 100%; box-sizing: border-box; border-left:5px solid mediumvioletred; border-top:5px solid mediumvioletred; border-bottom:5px solid mediumvioletred;">
+                    <div style="height: 100%; box-sizing: border-box; border-left:4px solid skyblue; border-top:4px solid skyblue; border-bottom:4px solid skyblue ;">
+                       <div style="height: 100%; box-sizing: border-box; border-left:3px solid mediumseagreen; border-top:3px solid mediumseagreen; border-bottom:3px solid mediumseagreen;">
+                           <div style="height: 100%; box-sizing: border-box; border-left:1px solid black; border-top:1px solid black; border-bottom:1px solid black; padding:4px;">
+                                     <img src="lugia.png"  width="170" height="170" style=" box-sizing: border-box; display: block; margin: 0 auto;" />
+                                     <p style="display: block; text-align: center; font-family: Arial;"><b><u>LUGIA</u></b></p>
+                           </div>
+                       </div>
+                   </div>
+               </div>
+        </td>
+            <td>1,2</td><td>1,3</td><td>1,4</td><td>1,5</td><td>1,6</td>
+        </tr>
+        <!---->
+        <tr>
+            <td style="width: 200px; height: 200px;">
+                <div style="height: 100%; box-sizing: border-box; border-left:5px solid darkgoldenrod; border-top:5px solid darkgoldenrod; border-bottom:5px solid darkgoldenrod;">
+                    <div style="height: 100%; box-sizing: border-box; border-left:4px solid dimgray; border-top:4px solid dimgray; border-bottom:4px solid dimgray;">
+                       <div style="height: 100%; box-sizing: border-box; border-left:3px solid yellow; border-top:3px solid yellow; border-bottom:3px solid yellow;">
+                           <div style="height: 100%; box-sizing: border-box; border-left:1px solid black; border-top:1px solid black; border-bottom:1px solid black; padding:4px;">
+                                     <img src="raikou.png"  width="120" height="120" style=" box-sizing: border-box; display: block; margin: 0 auto;" />
+                                     <p style="display: block; text-align: center; font-family: Arial;"><b><u>RAIKOU</u></b></p>
+                           </div>
+                       </div>
+                   </div>
+               </div>
+        </td>
+            <td>1,2</td><td>1,3</td><td>1,4</td><td>1,5</td><td>1,6</td>
+        </tr>
+        <!---->
+        <tr>
+            <td style="width: 200px; height: 200px;">
+                <div style="height: 100%; box-sizing: border-box; border-left:5px solid lightskyblue; border-top:5px solid lightskyblue; border-bottom:5px solid lightskyblue;">
+                    <div style="height: 100%; box-sizing: border-box; border-left:4px solid lightblue; border-top:4px solid lightblue; border-bottom:4px solid lightblue;">
+                       <div style="height: 100%; box-sizing: border-box; border-left:3px solid lightsalmon; border-top:3px solid lightsalmon; border-bottom:3px solid lightsalmon;">
+                           <div style="height: 100%; box-sizing: border-box; border-left:1px solid black; border-top:1px solid black; border-bottom:1px solid black; padding:4px;">
+                                     <img src="mega delibaird.jpg"  width="300" height="200" style=" box-sizing: border-box; display: block; margin: 0 auto;" />
+                                     <p style="display: block; text-align: center; font-family: Arial;"><b><u>MEGA DELIBAIRD</u></b></p>
+                           </div>
+                       </div>
+                   </div>
+               </div>
+        </td>
+            <td>1,2</td><td>1,3</td><td>1,4</td><td>1,5</td><td>1,6</td>
+        </tr>
+
+
+    </tbody>
+</table>
+
+<h2>6x6 Table</h2>
+<p>A cow is one of the most loving and gentle animals, and is also a favourite when it comes to domestic animals across the world! The cow has more than 1000 breeds, and can be seen in various shapes, sizes, and colours. Though, the most common colour of cow is white! The cow is the female mammal, and the male cow is called the Bull or Ox. ‘Heifer’ is the female baby cow, and ‘calf’ is the male baby cow. A cow has all physical features like other mammals with a long tail and two sharp horns.
+  A cow is one of the most loving and <strike>gentle animals, and </strike>is also a favourite when it comes to domestic animals across the world! The cow has more than 1000 breeds, and can be seen in various shapes, sizes, and colours. Though, the most common colour of cow is white! The cow is the female mammal, and the male cow is called the Bull or Ox. ‘Heifer’ is the female baby cow, and ‘calf’ is the male baby cow. A cow has all physical features like other mammals with a long tail and two sharp horns.
+  You can find cows almost everywhere. They can live in villages, cities, and jungles. They are mostly bred for milk in homes or dairy farms. Then they are used in villages for ploughing fields. Another use of cows is in pulling carts in villages and towns. Cows are milk-producing animals. Their milk is very nutritious and is healthy for humans. It is considered the healthiest animal milk recommended for young babies and sick people. A cow’s milk is used for making other dairy products. Curd, butter, buttermilk, cheese, and ghee are popular dairy products made using cow’s milk.
+
+Apart from the milk, even the cow’s dung is very useful. It is used to make biogas and renewable energy source. Natural fertilizer made of cow dung improves the productivity of the fields. It is also used to make cow dung cakes used in rural areas as fuel for cooking. 
+</p>
+<b style="display: block; text-align: center;">THE ONE AND ONLY MALE COW TO MILK</b>
+<marquee direction="right">⚡ THE ONE AND ONLY MALE COW TO MILK ⚡</marquee>
+<img src="otis the cow.jpg"  width="300" height="200" style="display: block; margin: 0 auto;" />
+<img src="otis the cow.jpg"  style="display: block; margin: 0 auto; width: 300px; height: 200px;" />
+
+<p>A cow is one of the most loving and gentle animals, and is also a favourite when it comes to domestic animals across the world! The cow has more than 1000 breeds, and can be seen in various shapes, sizes, and colours. Though, the most common colour of cow is white! The cow is the female mammal, and the male cow is called the Bull or Ox. ‘Heifer’ is the female baby cow, and ‘calf’ is the male baby cow. A cow has all physical features like other mammals with a long tail and two sharp horns.
+  A cow is one of the most loving and <strike>gentle animals, and </strike>is also a favourite when it comes to domestic animals across the world! The cow has more than 1000 breeds, and can be seen in various shapes, sizes, and colours. Though, the most common colour of cow is white! The cow is the female mammal, and the male cow is called the Bull or Ox. ‘Heifer’ is the female baby cow, and ‘calf’ is the male baby cow. A cow has all physical features like other mammals with a long tail and two sharp horns.
+  You can find cows almost everywhere. They can live in villages, cities, and jungles. They are mostly bred for milk in homes or dairy farms. Then they are used in villages for ploughing fields. Another use of cows is in pulling carts in villages and towns. Cows are milk-producing animals. Their milk is very nutritious and is healthy for humans. It is considered the healthiest animal milk recommended for young babies and sick people. A cow’s milk is used for making other dairy products. Curd, butter, buttermilk, cheese, and ghee are popular dairy products made using cow’s milk.
+
+Apart from the milk, even the cow’s dung is very useful. It is used to make biogas and renewable energy source. Natural fertilizer made of cow dung improves the productivity of the fields. It is also used to make cow dung cakes used in rural areas as fuel for cooking. 
+</p>
+
+</body>
+</html>

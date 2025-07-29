@@ -1,4 +1,3 @@
-// src/pages/home.js
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import styles from '../css/kopa.module.css';
@@ -12,12 +11,14 @@ const Home = () => {
       <h2>This is the Home Page</h2>
       <h1 className={styles.heading}>This is the home page</h1>
 
-      {/* Primary Button */}
-      <Button label="Click Me" variant="primary" />
+      <Button
+        label="Click Me"
+        variant="primary"
+        onClick={() => navigate('/pokemonchart')}
+      />
 
       <br /><br />
 
-      {/* Navigation Button to About */}
       <Button
         label="Go to About"
         variant="secondary"
@@ -26,7 +27,6 @@ const Home = () => {
 
       <br /><br />
 
-      {/* Navigation Button to Notification */}
       <Button
         label="Go to Notification"
         variant="secondary"
