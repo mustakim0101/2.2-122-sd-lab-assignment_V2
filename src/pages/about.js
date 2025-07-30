@@ -9,8 +9,12 @@ const About = () => {
 
   return (
     <div>
-      <h2>This is the About Page</h2>
+      <h3>This is the About Page</h3>
       <h1 className={styles.heading}>Welcome to the About Page</h1>
+      <p> Walton Plaza-IDB<br>Rokeya sharani,Sher-e-Bangla Nagar,Agargaon,Dhaka.
+      </br>
+
+01686691927</p>
       <Button
         label="Back to Home"
         variant="primary"

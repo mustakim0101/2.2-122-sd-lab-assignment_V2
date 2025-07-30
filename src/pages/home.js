@@ -11,11 +11,11 @@ const Home = () => {
   const commentsPerPage = 3;
   const post = {
     id: 1,
-    title: 'Lorem ipsum Dolor Lorem ipsum Dolor Lorem ipsum Dolor',
-    content: 'This is a simple explanation paragraph about the post. It contains some dummy text to fill the space and demonstrate the layout.',
+    title: 'welcome',
+    content: 'This is a simple explanation paragraph about the post. some dummy text to fill the space.',
     author: 'Mustakim Musa',
-    date: '7 January 2026',
-    reactions: { Like: 20, Love: 60, Angry: 5, Sad: 5 },
+    date: '31 july 1997777777777777777',
+    reactions: { Like: 20, Love: 600, Angry: 5, Sad: 5 },
     comments: [
       { id: 1, author: 'Mustakim Musa', date: '10 February 2025', text: 'Great post!' },
       { id: 2, author: 'Mustakim Musa', date: '12 February 2025', text: 'Nice content!' },
@@ -114,11 +114,12 @@ const Home = () => {
       </nav>
 
       <h2>This is the Home Page</h2>
-      <h1 className={styles.heading}>This is the home page</h1>
 
       <div style={{ marginBottom: '20px', border: '1px solid #ccc', padding: '10px' }}>
         <h3>{post.title}</h3>
-        <div style={{ backgroundColor: '#800000', height: '100px', margin: '10px 0' }}></div>
+        <div style={{ backgroundColor: '#80a730ff', height: '100px', margin: '10px 0' }}></div>
+        <div style={{ backgroundColor: '#147456ff', height: '100px', margin: '10px 0' }}></div>
+        <div style={{ backgroundColor: '#0b0ebdff', height: '100px', margin: '10px 0' }}></div>
         <p>{post.content}</p>
         <p>
           <Link to={`/author/${post.author}`}>{post.author}</Link> | {post.date}
