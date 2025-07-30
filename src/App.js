@@ -19,7 +19,72 @@ function App() {
 }
 
 export default App;
+/*
+import React from 'react';
+import { Routes, Route } from 'react-router-dom';
+import Home from './pages/home';
+import About from './pages/about';
+import Notification from './pages/notification';
+import PokemonChart from './pages/pokemonChart';
+import Author from './pages/author';
 
+function App() {
+  return (
+    <Routes>
+      <Route path="/" element={<Home />} />
+      <Route path="/about" element={<About />} />
+      <Route path="/notification" element={<Notification />} />
+      <Route path="/pokemonchart" element={<PokemonChart />} />
+      <Route path="/author/:name" element={<Author />} />
+    </Routes>
+  );
+}
+
+export default App;
+*/
+/*import React from 'react';
+import { Routes, Route } from 'react-router-dom';
+import Home from './pages/home';
+import About from './pages/about';
+import Notification from './pages/notification';
+import PokemonChart from './pages/pokemonChart';
+import Author from './pages/author';
+
+function App() {
+  return (
+    <Routes>
+      <Route path="/" element={<Home />} />
+      <Route path="/about" element={<About />} />
+      <Route path="/notification" element={<Notification />} />
+      <Route path="/pokemonchart" element={<PokemonChart />} />
+      <Route path="/author/:name" element={<Author />} />
+    </Routes>
+  );
+}
+
+export default App; */
+/*import React from 'react';
+import { Routes, Route } from 'react-router-dom';
+import Home from './pages/home';
+import About from './pages/about';
+import Notification from './pages/notification';
+import PokemonChart from './pages/pokemonChart';
+import Author from './pages/author';
+
+function App() {
+  return (
+    <Routes>
+      <Route path="/" element={<Home />} />
+      <Route path="/about" element={<About />} />
+      <Route path="/notification" element={<Notification />} />
+      <Route path="/pokemonchart" element={<PokemonChart />} />
+      <Route path="/author/:name" element={<Author />} />
+    </Routes>
+  );
+}
+
+export default App;
+ */
 /*
 import React from 'react';
 import Home from './pages/home';
