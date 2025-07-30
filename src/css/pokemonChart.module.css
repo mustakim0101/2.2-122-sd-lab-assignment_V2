@@ -1,0 +1,86 @@
+/* New CSS file for Pokémon chart animations */
+.table {
+  border-collapse: collapse;
+  width: 100%;
+  margin: 20px 0;
+}
+
+.cell {
+  border: 2px solid black;
+  padding: 10px;
+  text-align: center;
+}
+
+.cell img {
+  width: 100px;
+  border: 1px solid gray;
+}
+
+.earthquakeButton {
+  background-color: #8B4513;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+}
+
+.earthquakeButton:hover {
+  animation: crack 0.5s infinite;
+}
+
+@keyframes crack {
+  0% { transform: translateY(0); }
+  25% { transform: translateY(2px) rotate(1deg); }
+  50% { transform: translateY(-2px) rotate(-1deg); }
+  75% { transform: translateY(2px) rotate(1deg); }
+  100% { transform: translateY(0); }
+}
+
+.stoneEdgeButton {
+  background-color: #A9A9A9;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+}
+
+.stoneEdgeButton:hover {
+  animation: move 0.5s infinite alternate;
+}
+
+@keyframes move {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(10px); }
+}
+
+.surfButton {
+  background-color: #00CED1;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+}
+
+.surfButton:hover {
+  animation: wave 0.5s infinite;
+}
+
+@keyframes wave {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.comeBackButton {
+  background-color: #4682B4;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+}

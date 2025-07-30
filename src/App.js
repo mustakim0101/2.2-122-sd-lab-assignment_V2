@@ -4,6 +4,7 @@ import Home from './pages/home';
 import About from './pages/about';
 import Notification from './pages/notification';
 import PokemonChart from './pages/pokemonChart';
+import Author from './pages/author';
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
       <Route path="/about" element={<About />} />
       <Route path="/notification" element={<Notification />} />
       <Route path="/pokemonchart" element={<PokemonChart />} />
+      <Route path="/author/:name" element={<Author />} />
     </Routes>
   );
 }
